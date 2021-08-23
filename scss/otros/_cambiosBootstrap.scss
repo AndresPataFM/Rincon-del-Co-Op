@@ -1,0 +1,33 @@
+.btn-outline-primary{
+    border-radius: 10%;
+    border-color: #fe5018;
+    color: #fe5018;
+    background-color: transparent;
+}
+.btn-outline-primary:hover{
+    background-color: #853728;
+    border-color: #853728;
+    color: #fe5018;
+}
+.dropdown-menu{
+    background-color: transparent;
+    border-style: none;
+}
+.dropdown-item{
+    color: $naranja2;
+}
+.dropdown-toggle{
+    background-color: #fe5018;
+    border-color: #853728;
+    color: #1f1c2d;
+}
+.dropdown-toggle:focus-within{
+    background-color: #853728;
+    color: #1f1c2d;
+    border-color: #fe5018;
+}
+.dropdown-toggle:hover{
+    background-color: #853728;
+    color: #1f1c2d;
+    border-color: #fe5018;
+}

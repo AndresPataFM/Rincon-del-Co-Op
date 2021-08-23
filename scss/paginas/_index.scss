@@ -1,0 +1,20 @@
+.descIndex{
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-style: solid;
+    border-color: $naranja;
+    border-radius: 10px;
+}
+.indexSection{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.banner{
+    width: 95%;
+    display: flex;
+    align-self: center;
+    pointer-events: none;
+}

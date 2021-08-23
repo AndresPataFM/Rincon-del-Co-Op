@@ -1,0 +1,40 @@
+.paletaDeColores{
+    color: #1f1c2d;
+    color: rgba(31, 28, 45, 1);
+    color: #fe5018;
+    color: rgba(254, 80, 24, 1);
+    color: #f0eff0;
+    color: rgba(240, 239, 240, 1);
+    color: #898892;
+    color: rgba(137, 136, 146, 1);
+    color: #853728;
+    color: rgba(133, 55, 40, 1);
+}
+// Bordes
+
+$solid-border: 1px solid #853728;
+$border-inset: 3px inset #853728;
+$border-outset: 3px outset #853728;
+
+//Colores
+$naranja: #fe5018;
+$naranja2: #853728;
+$gris: #898892;
+$blanco: #f0eff0;
+$violeta: #1f1c2d;
+
+//Imagenes
+$size-standard: 32px;
+
+$icon: $size-standard;
+$small: $size-standard*2;
+$medium: $size-standard*4;
+$large: $size-standard*8;
+$giant: $size-standard*16;
+
+
+//Otros
+$tablet: 1024px;
+$phone: 764px;
+
+//Secreto

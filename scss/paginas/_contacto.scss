@@ -1,0 +1,12 @@
+.contacto{
+    display: flex;
+    justify-content: center;
+    form{
+        font-size: 0.7rem;
+        width: fit-content;
+        border: $solid-border;
+        padding: 2%;
+        border-radius: 5%;
+        line-height: 1.5rem;
+    }
+}

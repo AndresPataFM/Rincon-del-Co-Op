@@ -1,0 +1,66 @@
+.logo{
+    width: auto; 
+    height: 5rem;
+}
+.aLogo{
+    display: flex;
+    align-self: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 15vh;
+    margin-bottom: 3%;
+    div{
+        form{
+            margin: 0.8rem;
+        }
+    }
+}
+.buscaNav{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Nav */
+nav{
+    margin: 0.8rem;
+    a{
+        text-decoration: none;
+        margin: 2px;
+    }
+    a:hover{
+        color: $naranja;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+            background-color: $violeta;
+            border: 3px ridge $naranja2;
+        }
+        li:hover{
+            border: 3px ridge $naranja;
+        }
+    }
+}
+.hamburger{
+    color: $violeta ;
+    text-align: center;
+    font-size: 1.2rem;
+    display: none;
+}
+@media only screen and (max-width: $phone){
+    .menuTabletPc{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+    }
+    .dropdown-toggle::after {
+        content: none;
+    }
+}

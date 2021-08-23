@@ -1,0 +1,19 @@
+.tablaGlosario td {
+    vertical-align: middle;
+}
+.tablaGlosario td div{
+    display: flex;
+    justify-content: center;
+}
+.tablaGlosario{
+    th{
+        border: $solid-border;
+    }
+    td{
+        vertical-align: middle;
+        div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

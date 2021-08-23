@@ -1,0 +1,90 @@
+.sobreNosotrosSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+.nosotros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.nosotros__descripción{
+    width: 80%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:0.9rem;
+}
+@for $i from 1 to 3{
+    .personaContainer#{$i}{
+        display: flex;
+        @if ($i % 2 == 1) {justify-content: flex-start;} @else {justify-content: flex-end;}
+    }
+}
+.persona{
+    width: 60%;
+    display: inline-grid;
+    grid-template-areas: 
+    "persona__nombre persona__nombre persona__nombre persona__nombre"
+    "persona__descripcion persona__descripcion persona__descripcion persona__git";
+    grid-auto-columns: minmax(50px, auto);
+    grid-auto-rows: minmax(50px, auto);
+    border: $border-outset;
+    margin-bottom: 3%;
+}
+.persona:hover{
+    background-image: radial-gradient(circle, $violeta 70%, rgba(133, 55, 40, 0.2));
+}
+@media only screen and (max-width: $tablet){
+    .persona{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: $phone){
+    .persona{
+        width: 90%;
+    }
+}
+.persona__nombre{
+    font-size: 1.2rem;
+    grid-area: persona__nombre;
+    border: $border-inset;
+    padding-left: 3%;
+}
+.persona__descripcion{
+    grid-area: persona__descripcion;
+    padding-left: 3%;
+    font-size:0.9rem;
+}
+.persona__git{
+    width: fit-content;
+    height: fit-content;
+    grid-area: persona__git;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    border: $border-inset;
+    background-color: $blanco;
+}
+.emprendimiento{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 60%;
+}
+.emprendimiento__titulo{
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.emprendimiento__descripcion{
+    text-align: center;
+    font-size: 0.9rem;
+}
+@media only screen and (max-width: $phone){
+    .emprendimiento__titulo{
+        text-align: center;
+    }
+    .emprendimiento__descripcion{
+        text-align: justify;
+    }
+}

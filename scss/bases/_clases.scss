@@ -1,0 +1,60 @@
+body{
+    font-family: 'Press Start 2P', cursive !important;
+    color: $naranja;
+}
+html{
+    font-size: 17px;
+}
+@media only screen and (max-width: 1024px) {
+    html{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 13px;
+    }
+}
+.mainBody{
+    background-color: $violeta;
+}
+section{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@media only screen and (max-width: 768px) {
+    section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+a{
+    color: $naranja;
+}
+a:visited {
+    color: $naranja2;
+}
+.contieneTablas{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: $solid-border;
+    th{
+        text-align: center;
+        border: $solid-border;
+    }
+    td{
+        font-size: 0.7rem;
+        border: $solid-border;
+    }
+}

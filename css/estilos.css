@@ -1,0 +1,937 @@
+@charset "UTF-8";
+.paletaDeColores {
+  color: #1f1c2d;
+  color: #1f1c2d;
+  color: #fe5018;
+  color: #fe5018;
+  color: #f0eff0;
+  color: #f0eff0;
+  color: #898892;
+  color: #898892;
+  color: #853728;
+  color: #853728; }
+
+body {
+  font-family: 'Press Start 2P', cursive !important;
+  color: #fe5018; }
+
+html {
+  font-size: 17px; }
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 15px; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 13px; } }
+
+.mainBody {
+  background-color: #1f1c2d; }
+
+section {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; } }
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 3%; }
+
+a {
+  color: #fe5018; }
+
+a:visited {
+  color: #853728; }
+
+.contieneTablas {
+  display: flex;
+  justify-content: center; }
+
+table {
+  border: 1px solid #853728; }
+  table th {
+    text-align: center;
+    border: 1px solid #853728; }
+  table td {
+    font-size: 0.7rem;
+    border: 1px solid #853728; }
+
+.logo {
+  width: auto;
+  height: 5rem; }
+
+.aLogo {
+  display: flex;
+  align-self: center; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 15vh;
+  margin-bottom: 3%; }
+  header div form {
+    margin: 0.8rem; }
+
+.buscaNav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+/* Nav */
+nav {
+  margin: 0.8rem; }
+  nav a {
+    text-decoration: none;
+    margin: 2px; }
+  nav a:hover {
+    color: #fe5018; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      background-color: #1f1c2d;
+      border: 3px ridge #853728; }
+    nav ul li:hover {
+      border: 3px ridge #fe5018; }
+
+.hamburger {
+  color: #1f1c2d;
+  text-align: center;
+  font-size: 1.2rem;
+  display: none; }
+
+@media only screen and (max-width: 764px) {
+  .menuTabletPc {
+    display: none; }
+  .hamburger {
+    display: inline; }
+  .dropdown-toggle::after {
+    content: none; } }
+
+footer {
+  font-size: 0.5rem;
+  padding-top: 10px; }
+
+.volverInicio {
+  display: block;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  font-size: 1.2em; }
+
+.multimedia {
+  font-size: 0.6rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 85px);
+  grid-template-rows: 60px;
+  justify-content: center; }
+
+@media only screen and (max-width: 1024px) {
+  .multimedia {
+    grid-template-areas: "steam steam insta insta mail mail" "youtube youtube youtube multiContacto multiContacto multiContacto";
+    grid-template-columns: repeat(6, 45px);
+    grid-template-rows: repeat(2, 60px); }
+  .steam {
+    grid-area: steam; }
+  .insta {
+    grid-area: insta; }
+  .mail {
+    grid-area: mail; }
+  .youtube {
+    grid-area: youtube; }
+  .multiContacto {
+    grid-area: multiContacto; } }
+
+@media only screen and (max-width: 768px) {
+  .multimedia {
+    grid-template-areas: "steam insta" "mail youtube" "multiContacto multiContacto";
+    grid-template-columns: repeat(2, 85px);
+    grid-template-rows: repeat(3, 60px); }
+  .steam {
+    grid-area: steam; }
+  .insta {
+    grid-area: insta; }
+  .mail {
+    grid-area: mail; }
+  .youtube {
+    grid-area: youtube; }
+  .multiContacto {
+    grid-area: multiContacto; } }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #853728; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(254, 80, 24, 0.5);
+  opacity: 0.7;
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fe5018; }
+
+.btn-outline-primary {
+  border-radius: 10%;
+  border-color: #fe5018;
+  color: #fe5018;
+  background-color: transparent; }
+
+.btn-outline-primary:hover {
+  background-color: #853728;
+  border-color: #853728;
+  color: #fe5018; }
+
+.dropdown-menu {
+  background-color: transparent;
+  border-style: none; }
+
+.dropdown-item {
+  color: #853728; }
+
+.dropdown-toggle {
+  background-color: #fe5018;
+  border-color: #853728;
+  color: #1f1c2d; }
+
+.dropdown-toggle:focus-within {
+  background-color: #853728;
+  color: #1f1c2d;
+  border-color: #fe5018; }
+
+.dropdown-toggle:hover {
+  background-color: #853728;
+  color: #1f1c2d;
+  border-color: #fe5018; }
+
+.descIndex {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  border-style: solid;
+  border-color: #fe5018;
+  border-radius: 10px; }
+
+.indexSection {
+  display: flex;
+  align-content: center;
+  flex-direction: column; }
+
+.banner {
+  width: 95%;
+  display: flex;
+  align-self: center;
+  pointer-events: none; }
+
+.mGameBorder {
+  border-style: inset;
+  border-color: #853728; }
+
+.mGame {
+  display: grid;
+  grid-template-areas: "mGameIcon mGameTitle mGameTitle mGameTitle mGameRating" "mGameIcon mGameCategories mGameCategories mGameCategories mGamePlayerNumber" "mGameIconInfo mGameIconInfo mGameDesc mGameDesc mGameDesc" "mGameTecInfo mGameTecInfo mGameDesc mGameDesc mGameDesc";
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 125px 125px 100px 500px;
+  border-style: outset;
+  border-color: #853728;
+  height: min-content; }
+
+.mGameIcon {
+  grid-area: mGameIcon;
+  background-color: #f0eff0; }
+  .mGameIcon img {
+    max-width: 250px; }
+
+.mGameTitle {
+  grid-area: mGameTitle;
+  text-align: center;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center; }
+  .mGameTitle p {
+    height: max-content; }
+
+.mGameRating {
+  grid-area: mGameRating;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center; }
+  .mGameRating p {
+    height: max-content; }
+  .mGameRating img {
+    width: 32px;
+    display: flex;
+    align-self: center; }
+
+.mGameCategories {
+  grid-area: mGameCategories;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.mCatList {
+  height: max-content;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem; }
+  .mCatList li {
+    padding: 2.5%; }
+
+.mGamePlayerNumber {
+  grid-area: mGamePlayerNumber;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem; }
+  .mGamePlayerNumber p {
+    text-align: center;
+    height: max-content; }
+
+.mGameIconInfo {
+  grid-area: mGameIconInfo;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.mGIcon {
+  display: grid;
+  grid-template-columns: repeat(6, 40px); }
+
+.mGameTecInfo {
+  grid-area: mGameTecInfo;
+  display: flex;
+  align-content: center;
+  overflow-y: scroll; }
+
+.mTecList {
+  list-style-type: square;
+  font-size: 0.8rem;
+  padding-right: 5%;
+  padding-left: 10%;
+  padding-top: 5%;
+  line-height: 1.5;
+  text-indent: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  height: max-content; }
+
+.mGameDesc {
+  grid-area: mGameDesc;
+  padding: 5%;
+  overflow-y: scroll; }
+
+.mDesc {
+  height: max-content;
+  max-width: 100%;
+  min-width: 0;
+  text-indent: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.8rem;
+  line-height: 1.5; }
+
+@media only screen and (max-width: 1024px) {
+  .mGame {
+    grid-template-columns: 140px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 70px 0.1fr 0.4fr 0.4fr;
+    grid-template-areas: "mGameIcon mGameTitle mGameTitle mGameTitle mGameRating" "mGameIcon mGameCategories mGameCategories mGameCategories mGamePlayerNumber" "mGameIconInfo mGameIconInfo mGameIconInfo mGameIconInfo mGameIconInfo" "mGameTecInfo mGameTecInfo mGameTecInfo mGameTecInfo mGameTecInfo" "mGameDesc mGameDesc mGameDesc mGameDesc mGameDesc"; }
+  .mGameIcon img {
+    width: 140px;
+    height: 140px; }
+  .mGameTitle {
+    font-size: 1rem; }
+  .mTecList {
+    font-size: 0.8rem; }
+  .mDesc {
+    font-size: 0.8rem; }
+  .mCatList {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 764px) {
+  .mTecList {
+    font-size: 0.6rem; }
+  .mDesc {
+    font-size: 0.6rem; } }
+
+.recomendadosGrid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: auto;
+  grid-template-areas: "r1 rMes rMes r2" "r3 rMes rMes r4" "r5 r6 r7 r8";
+  align-content: center;
+  justify-content: center;
+  grid-gap: 20px; }
+
+@media only screen and (max-width: 1024px) {
+  .recomendadosGrid {
+    grid-template-areas: "rMes rMes r1" "rMes rMes r2" "r3 r4 r5" "r6 r7 r8"; } }
+
+@media only screen and (max-width: 764px) {
+  .recomendadosGrid {
+    grid-template-areas: "rMes rMes" "rMes rMes" "r1 r2" "r3 r4" "r5 r6" "r7 r8"; } }
+
+#rMes {
+  grid-area: rMes;
+  width: fit-content;
+  background-color: rgba(240, 239, 240, 0.5);
+  aspect-ratio: 1;
+  border-style: inset;
+  border-color: #fe5018;
+  border-radius: 10px; }
+  #rMes img {
+    width: 284.16px;
+    max-height: max-content;
+    opacity: 0.5; }
+
+#rMes:hover {
+  background-color: #f0eff0;
+  transform: scale(1.2, 1.2);
+  z-index: 1000; }
+
+#rMes:hover img {
+  opacity: 1;
+  transform: scale(1.2, 1.2); }
+
+.recomendadoJuego {
+  aspect-ratio: 1;
+  opacity: 0.5;
+  border-radius: 10px;
+  border-style: inset;
+  border-color: #fe5018;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-width: fit-content;
+  min-height: fit-content; }
+  .recomendadoJuego img {
+    width: 128px;
+    height: 128px;
+    opacity: 0.5;
+    border-radius: 10px; }
+
+.recomendadoJuego:hover {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+  z-index: 1000; }
+
+.recomendadoJuego:hover img {
+  opacity: 1;
+  transform: scale(1.2, 1.2); }
+
+#r1 {
+  grid-area: r1; }
+
+#r2 {
+  grid-area: r2; }
+
+#r3 {
+  grid-area: r3; }
+
+#r4 {
+  grid-area: r4; }
+
+#r5 {
+  grid-area: r5; }
+
+#r6 {
+  grid-area: r6; }
+
+#r7 {
+  grid-area: r7; }
+
+#r8 {
+  grid-area: r8; }
+
+.tablaJuegos {
+  line-height: 1.3; }
+
+.jGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas: "jRating jTitle jTitle jTitle jJugadores" "jRating jIcons jIcons jIcons jJugadores" "jTec jTec jDesc jDesc jDesc";
+  margin-bottom: 30px;
+  border-style: outset;
+  border-color: #853728; }
+
+.jGrid:hover {
+  background-image: radial-gradient(circle, #1f1c2d 70%, rgba(133, 55, 40, 0.2)); }
+
+.jContent {
+  border-style: inset;
+  border-color: #853728; }
+
+.jTitle {
+  grid-area: jTitle;
+  text-decoration: underline;
+  font-size: 1.2em; }
+
+.jRating {
+  grid-area: jRating;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  .jRating img {
+    width: 32px; }
+
+.jJugadores {
+  grid-area: jJugadores; }
+
+.jIcons {
+  grid-area: jIcons; }
+
+.jTec {
+  grid-area: jTec; }
+
+.jTecList {
+  font-size: 0.9em;
+  line-height: 1.2em; }
+
+.jDesc {
+  grid-area: jDesc; }
+  .jDesc details p {
+    font-size: 0.9em;
+    line-height: 1.2em; }
+
+@media only screen and (max-width: 1024px) {
+  .jGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "jTitle jTitle jTitle" "jRating jIcons jJugadores" "jTec jTec jTec" "jDesc jDesc jDesc"; } }
+
+.haciaArriba div {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border-style: outset;
+  border-color: #fe5018;
+  padding: 5px;
+  background-color: #853728;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  height: 3rem;
+  width: 3rem; }
+  .haciaArriba div p {
+    display: block;
+    text-decoration: none;
+    color: #fe5018;
+    font-size: 1.5rem;
+    height: fit-content; }
+
+.haciaArriba:hover div {
+  border-style: inset; }
+
+.sobreNosotrosSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  margin-top: 3%; }
+
+.nosotros__descripción {
+  width: 80%;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.9rem; }
+
+.personaContainer1 {
+  display: flex;
+  justify-content: flex-start; }
+
+.personaContainer2 {
+  display: flex;
+  justify-content: flex-end; }
+
+.persona {
+  width: 60%;
+  display: inline-grid;
+  grid-template-areas: "persona__nombre persona__nombre persona__nombre persona__nombre" "persona__descripcion persona__descripcion persona__descripcion persona__git";
+  grid-auto-columns: minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  border: 3px outset #853728;
+  margin-bottom: 3%; }
+
+.persona:hover {
+  background-image: radial-gradient(circle, #1f1c2d 70%, rgba(133, 55, 40, 0.2)); }
+
+@media only screen and (max-width: 1024px) {
+  .persona {
+    width: 75%; } }
+
+@media only screen and (max-width: 764px) {
+  .persona {
+    width: 90%; } }
+
+.persona__nombre {
+  font-size: 1.2rem;
+  grid-area: persona__nombre;
+  border: 3px inset #853728;
+  padding-left: 3%; }
+
+.persona__descripcion {
+  grid-area: persona__descripcion;
+  padding-left: 3%;
+  font-size: 0.9rem; }
+
+.persona__git {
+  width: fit-content;
+  height: fit-content;
+  grid-area: persona__git;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  border: 3px inset #853728;
+  background-color: #f0eff0; }
+
+.emprendimiento {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 60%; }
+
+.emprendimiento__titulo {
+  font-size: 1.2rem;
+  text-decoration: underline; }
+
+.emprendimiento__descripcion {
+  text-align: center;
+  font-size: 0.9rem; }
+
+@media only screen and (max-width: 764px) {
+  .emprendimiento__titulo {
+    text-align: center; }
+  .emprendimiento__descripcion {
+    text-align: justify; } }
+
+.tablaGlosario td {
+  vertical-align: middle; }
+
+.tablaGlosario td div {
+  display: flex;
+  justify-content: center; }
+
+.tablaGlosario th {
+  border: 1px solid #853728; }
+
+.tablaGlosario td {
+  vertical-align: middle; }
+  .tablaGlosario td div {
+    display: flex;
+    justify-content: center; }
+
+.contacto {
+  display: flex;
+  justify-content: center; }
+  .contacto form {
+    font-size: 0.7rem;
+    width: fit-content;
+    border: 1px solid #853728;
+    padding: 2%;
+    border-radius: 5%;
+    line-height: 1.5rem; }
+
+#secreto {
+  display: flex;
+  justify-content: flex-end; }
+
+#secreto2 {
+  text-decoration-line: none; }
+
+.videoRana {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+  width: auto; }
+
+.ranaFancy {
+  background-image: url("./../imagenes/secreto/Fancyfrog.png ");
+  animation-name: Fancy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaKing {
+  background-image: url("./../imagenes/secreto/Kingfrog.png ");
+  animation-name: King;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaMage {
+  background-image: url("./../imagenes/secreto/Magefrog.png ");
+  animation-name: Mage;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaMagic {
+  background-image: url("./../imagenes/secreto/Magicfrog.png ");
+  animation-name: Magic;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaMagician {
+  background-image: url("./../imagenes/secreto/Magicianfrog.png ");
+  animation-name: Magician;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaParty {
+  background-image: url("./../imagenes/secreto/Partyfrog.png ");
+  animation-name: Party;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaWealthy {
+  background-image: url("./../imagenes/secreto/Wealthyfrog.png ");
+  animation-name: Wealthy;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.ranaWitch {
+  background-image: url("./../imagenes/secreto/Witchfrog.png ");
+  animation-name: Witch;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 128px;
+  height: 128px; }
+
+.s1 {
+  grid-area: s1;
+  animation-delay: 1s; }
+
+.s2 {
+  grid-area: s2;
+  animation-delay: 2s; }
+
+.s3 {
+  grid-area: s3;
+  animation-delay: 3s; }
+
+.s4 {
+  grid-area: s4;
+  animation-delay: 4s; }
+
+.s5 {
+  grid-area: s5;
+  animation-delay: 5s; }
+
+.s6 {
+  grid-area: s6;
+  animation-delay: 6s; }
+
+.s7 {
+  grid-area: s7;
+  animation-delay: 7s; }
+
+.s8 {
+  grid-area: s8;
+  animation-delay: 8s; }
+
+.s9 {
+  grid-area: s9;
+  animation-delay: 9s; }
+
+.ranaHolder {
+  display: grid;
+  width: 100%;
+  grid-auto-columns: minmax(40px, auto);
+  grid-auto-rows: auto;
+  grid-template-areas: "s2 s1 s1 s3" "s4 s1 s1 s5" "s6 s1 s1 s7" "s8 s1 s1 s9";
+  align-items: center;
+  justify-items: center; }
+
+@media only screen and (max-width: 764px) {
+  .s2 {
+    height: 64px;
+    width: 64px; }
+  .s3 {
+    height: 64px;
+    width: 64px; }
+  .s4 {
+    height: 64px;
+    width: 64px; }
+  .s5 {
+    height: 64px;
+    width: 64px; }
+  .s6 {
+    height: 64px;
+    width: 64px; }
+  .s7 {
+    height: 64px;
+    width: 64px; }
+  .s8 {
+    height: 64px;
+    width: 64px; }
+  .s9 {
+    height: 64px;
+    width: 64px; }
+  .videoRana {
+    height: auto;
+    width: 256px; }
+  .ranaHolder {
+    grid-template-areas: "s2 s3 s4 s5" "s1 s1 s1 s1" "s1 s1 s1 s1" "s6 s7 s8 s9"; } }
+
+@keyframes Fancy {
+  25% {
+    background-position: left; }
+  75% {
+    background-position: right; }
+  100% {
+    background-position: center; } }
+
+@keyframes Magic {
+  25% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(720deg); }
+  75% {
+    transform: rotate(1080deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes King {
+  25% {
+    transform: scaleY(1.3); }
+  50% {
+    transform: scaleY(1.6); }
+  75% {
+    transform: scaleY(1.9); }
+  100% {
+    transform: scaleY(1); } }
+
+@keyframes Witch {
+  25% {
+    transform: skew(30deg, 20deg); }
+  50% {
+    transform: skew(0deg, 0deg); }
+  75% {
+    transform: skew(-20deg, -30deg); }
+  100% {
+    transform: skew(0deg, 0deg); } }
+
+@keyframes Mage {
+  25% {
+    transform: rotateX(360deg); }
+  75% {
+    transform: rotateY(360deg); } }
+
+@keyframes Wealthy {
+  5% {
+    transform: rotate(30deg);
+    top: 20px; }
+  10% {
+    transform: rotate(30deg);
+    top: 0px; }
+  15% {
+    transform: rotate(30deg);
+    top: 20px; }
+  20% {
+    transform: rotate(30deg);
+    top: 0px; }
+  25% {
+    transform: rotate(30deg);
+    top: 20px; }
+  30% {
+    transform: rotate(30deg);
+    top: 0px; }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes Party {
+  20% {
+    transform: rotate(30deg); }
+  40% {
+    transform: rotate(-30deg); }
+  60% {
+    transform: rotate(60deg); }
+  80% {
+    transform: rotate(-60deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes Magician {
+  15% {
+    transform: rotate(30deg); }
+  45% {
+    transform: rotate(0deg); }
+  80% {
+    background-image: radial-gradient(circle, rgba(133, 55, 40, 0.2), #1f1c2d 35%); }
+  85% {
+    background-image: radial-gradient(circle, #1f1c2d 30%, rgba(133, 55, 40, 0.4) 70%); }
+  90% {
+    background-image: radial-gradient(circle, #1f1c2d 70%, rgba(133, 55, 40, 0.2)); }
+  95% {
+    background-image: url("./../imagenes/secreto/Magicianfrog.png "); } }

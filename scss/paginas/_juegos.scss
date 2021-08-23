@@ -1,0 +1,96 @@
+.tablaJuegos{
+    line-height: 1.3;
+}
+.jGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "jRating jTitle jTitle jTitle jJugadores"
+    "jRating jIcons jIcons jIcons jJugadores"
+    "jTec jTec jDesc jDesc jDesc";
+    margin-bottom: 30px;
+    border-style: outset;
+    border-color: $naranja2;
+}
+.jGrid:hover{
+    background-image: radial-gradient(circle, $violeta 70%, rgba(133, 55, 40, 0.2));
+}
+.jContent{
+    border-style: inset;
+    border-color: $naranja2;
+}
+.jTitle{
+    grid-area: jTitle;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+.jRating{
+    grid-area: jRating;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    img{
+        width: 32px;
+    }
+}
+.jJugadores{
+    grid-area: jJugadores;
+}
+.jIcons{
+    grid-area: jIcons;
+}
+.jTec{
+    grid-area: jTec;
+}
+.jTecList{
+    font-size: 0.9em;
+    line-height: 1.2em;
+}
+.jDesc{
+    grid-area: jDesc;
+    details{
+        p{
+            font-size: 0.9em;
+            line-height: 1.2em;
+        }
+    }
+}
+@media only screen and (max-width: 1024px){
+    .jGrid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "jTitle jTitle jTitle"
+        "jRating jIcons jJugadores"
+        "jTec jTec jTec"
+        "jDesc jDesc jDesc";
+    }
+}
+.haciaArriba{
+    div{
+        position:fixed;
+        bottom: 5%;
+        right: 5%;
+        border-style: outset;
+        border-color: $naranja;
+        padding: 5px;
+        background-color: $naranja2;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        aspect-ratio: 1;
+        height: 3rem;
+        width: 3rem;
+        p{
+            display: block;
+            text-decoration: none;
+            color:$naranja;
+            font-size: 1.5rem;
+            height: fit-content;
+        }
+    }
+}
+.haciaArriba:hover div{
+    border-style: inset;
+}

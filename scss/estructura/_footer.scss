@@ -1,0 +1,67 @@
+footer{
+    font-size: 0.5rem;
+    padding-top: 10px;
+}
+.volverInicio{
+    display: block;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+.multimedia{
+    font-size: 0.6rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 85px);
+    grid-template-rows: 60px;
+    justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+    .multimedia{
+        grid-template-areas: 
+        "steam steam insta insta mail mail"
+        "youtube youtube youtube multiContacto multiContacto multiContacto";
+        grid-template-columns: repeat(6, 45px);
+        grid-template-rows: repeat(2, 60px)
+    }
+    .steam{
+        grid-area: steam;
+    }
+    .insta{
+        grid-area: insta;
+    }
+    .mail{
+        grid-area: mail;
+    }
+    .youtube{
+        grid-area: youtube;
+    }
+    .multiContacto{
+        grid-area: multiContacto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .multimedia{
+        grid-template-areas: 
+        "steam insta"
+        "mail youtube"
+        "multiContacto multiContacto";
+        grid-template-columns: repeat(2, 85px);
+        grid-template-rows: repeat(3, 60px)
+    }
+    .steam{
+        grid-area: steam;
+    }
+    .insta{
+        grid-area: insta;
+    }
+    .mail{
+        grid-area: mail;
+    }
+    .youtube{
+        grid-area: youtube;
+    }
+    .multiContacto{
+        grid-area: multiContacto;
+    }
+}

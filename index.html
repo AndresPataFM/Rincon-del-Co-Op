@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" class="mio">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Landing page del Rincón del CO-OP"> 
+        <meta name="keywords" content="Game, Gamer, Review, Reseña, Videojuegos, RPG, Juego, Mesa, Tabletop, Español, Co-Op, CO, Op, COOP, Cooperativo, 2-Players, Multiplayer"> 
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
+        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="./CSS/bootstrap-utilities.min.css">
+        <link rel="stylesheet" href="./CSS/bootstrap-grid.min.css">
+        <script type="text/javascript" src="./Javascript/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/estilos.css">
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <title>Rincón del CO-OP</title>
+
+    </head>
+    <body class="mainBody meCagoEnBootstrap">
+        <header>
+            <a href="./index.html" class="aLogo">
+                <img src="./imagenes/rincoop-logo.gif" alt="logo" class="logo">
+            </a>
+            <h1>Rincón del Co-Op</h1>
+            <div class="buscaNav"> 
+                <form action=""><!-- Buscador -->
+                    <input type="submit" value="Buscar" class="btn-outline-primary">
+                    <input type="text" placeholder="Juego..." class="form-control">
+                </form>
+                <nav> <!-- barra de navegación -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="menuTabletPc">Menu</span>
+                            <span class="hamburger">☰</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a href="./index.html" class="dropdown-item">Inicio</a></li>
+                            <li><a href="./paginas/juegoDelMes.html" class="dropdown-item">Juego del Mes</a></li>
+                            <li><a href="./paginas/recomendados.html" class="dropdown-item">Recomendados</a></li>
+                            <li><a href="./paginas/juegos.html" class="dropdown-item">Juegos</a></li>
+                            <li><a href="./paginas/sobreNosotros.html" class="dropdown-item">Sobre Nosotros</a></li>
+                            <li><a href="./paginas/glosario.html" class="dropdown-item">Glosario</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="indexSection"> <!-- Banner con mini descripción -->
+            <video src="./imagenes/Banner by Retronator.webm" loop autoplay muted class="banner"></video>
+            <!-- <img src="./imagenes/Rincoop banner by retronator.gif" alt="Banner" class="banner"> -->
+            <div class="descIndex">
+                <p><i>En el Rincón del Co-Op encontraran recomendaciones de juegos de mesa para jugar con amigos desde juegos de cartas a videojuegos, de 5 minutos a meses. ¡Juguemos todos con o encontra nuestros amigos!</i></p>
+            </div>
+            <div id="secreto"> <!-- link a la pagina chiste -->
+                <a href="./paginas/secreto.html" id="secreto2">🐸</a>
+            </div>
+        </section>
+        <footer>
+            <div class="multimedia"> <!-- Links de contacto -->
+                <div class="steam"><a href="https://steamcommunity.com/groups/rincoop"><img src="./imagenes/multimedia/steamgroup.gif" alt="Steam Group"><p>Steam Group</p></a></div> <!-- se supone que el a tendra display de block y height del 100% asi se puede clickear todo el div-->
+                <div class="insta"><a href="https://www.instagram.com/rincoop/"><img src="./imagenes/multimedia/instagram3.gif" alt="Instagram"><p>Instagram</p></a></div>
+                <div class="mail"><a href="mailto:rinconcoop@gmail.com"><img src="./imagenes/multimedia/mail.gif" alt="Mail"><p>Mail</p></a></div><!-- idealmente que al clickear copie rinconcoop@gmail.com al clipboard, -->
+                <div class="youtube"><a href="https://www.youtube.com/channel/UCC5VU0aKKNNXoIw6PNK2AGw"><img src="./imagenes/multimedia/youtube.gif" alt=""><p>Youtube</p></a></div>
+                <div class="multiContacto"><a href="./paginas/contacto.html"><img src="./imagenes/multimedia/contacto.gif" alt="contacto"><p>Contacto</p></a></div>
+            </div>
+        </footer>
+    </body>
+</html>
+<!-- Hecho por Andrés Pata -->
