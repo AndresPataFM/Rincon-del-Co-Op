@@ -56,15 +56,13 @@
     align-items: center;
     justify-content: center;
 }
-.mCatList{
+.mCat{
     height: max-content;
+    text-align: center;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    li{
-        padding: 2.5%;
-    }
 }
 .mGamePlayerNumber{
     grid-area: mGamePlayerNumber;
@@ -145,8 +143,13 @@
     .mDesc{
         font-size: 0.8rem;
     }
-    .mCatList{
-        flex-direction: column;
+}
+@media only screen and (max-width: 764px){
+    .mTecList{
+        font-size: 0.6rem;
+    }
+    .mDesc{
+        font-size: 0.6rem;
     }
 }
 @media only screen and (max-width: 764px){
@@ -155,5 +158,19 @@
     }
     .mDesc{
         font-size: 0.6rem;
+    }
+}
+@media only screen and (max-width: 425px){
+    .mGame{
+        grid-template-columns: 140px 1fr;
+        grid-template-rows:  0.1fr 70px 70px 0.1fr 0.1fr 0.4fr 0.4fr;
+        grid-template-areas: 
+        "mGameTitle mGameTitle"
+        "mGameIcon mGameRating"
+        "mGameIcon mGamePlayerNumber"
+        "mGameCategories mGameCategories"
+        "mGameIconInfo mGameIconInfo"
+        "mGameTecInfo mGameTecInfo"
+        "mGameDesc mGameDesc";
     }
 }

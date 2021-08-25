@@ -28,6 +28,11 @@ section{
         padding-right: 0;
     }
 }
+h1{
+    text-align: center;
+    align-self: center;
+    height: fit-content;
+}
 @media only screen and (max-width: 768px) {
     h1{
         font-size: 2rem;
@@ -36,6 +41,7 @@ section{
 h2{
     font-size: 1.5rem;
     margin-bottom: 3%;
+    text-align: center;
 }
 a{
     color: $naranja;

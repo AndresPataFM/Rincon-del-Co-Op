@@ -38,13 +38,19 @@ section {
     padding-left: 0;
     padding-right: 0; } }
 
+h1 {
+  text-align: center;
+  align-self: center;
+  height: fit-content; }
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 2rem; } }
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 3%; }
+  margin-bottom: 3%;
+  text-align: center; }
 
 a {
   color: #fe5018; }
@@ -71,7 +77,10 @@ table {
 
 .aLogo {
   display: flex;
-  align-self: center; }
+  align-self: center;
+  justify-self: center;
+  margin: 5px;
+  margin-left: 2%; }
 
 header {
   display: flex;
@@ -127,7 +136,7 @@ footer {
 .volverInicio {
   display: block;
   margin-bottom: 5%;
-  margin-left: 5%;
+  margin-left: 15%;
   font-size: 1.2em; }
 
 .multimedia {
@@ -228,7 +237,9 @@ footer {
   margin-right: 2.5%;
   border-style: solid;
   border-color: #fe5018;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 1.5%;
+  padding-bottom: 0; }
 
 .indexSection {
   display: flex;
@@ -290,14 +301,13 @@ footer {
   align-items: center;
   justify-content: center; }
 
-.mCatList {
+.mCat {
   height: max-content;
+  text-align: center;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem; }
-  .mCatList li {
-    padding: 2.5%; }
 
 .mGamePlayerNumber {
   grid-area: mGamePlayerNumber;
@@ -365,15 +375,25 @@ footer {
   .mTecList {
     font-size: 0.8rem; }
   .mDesc {
-    font-size: 0.8rem; }
-  .mCatList {
-    flex-direction: column; } }
+    font-size: 0.8rem; } }
 
 @media only screen and (max-width: 764px) {
   .mTecList {
     font-size: 0.6rem; }
   .mDesc {
     font-size: 0.6rem; } }
+
+@media only screen and (max-width: 764px) {
+  .mTecList {
+    font-size: 0.6rem; }
+  .mDesc {
+    font-size: 0.6rem; } }
+
+@media only screen and (max-width: 425px) {
+  .mGame {
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 0.1fr 70px 70px 0.1fr 0.1fr 0.4fr 0.4fr;
+    grid-template-areas: "mGameTitle mGameTitle" "mGameIcon mGameRating" "mGameIcon mGamePlayerNumber" "mGameCategories mGameCategories" "mGameIconInfo mGameIconInfo" "mGameTecInfo mGameTecInfo" "mGameDesc mGameDesc"; } }
 
 .recomendadosGrid {
   display: grid;
