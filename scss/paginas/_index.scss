@@ -1,8 +1,6 @@
 .descIndex{
     font-size: 0.9rem;
     text-align: center;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
     border-style: solid;
     border-color: $naranja;
     border-radius: 10px;
@@ -15,8 +13,17 @@
     flex-direction: column;
 }
 .banner{
-    width: 95%;
+    width: 100%;
     display: flex;
     align-self: center;
     pointer-events: none;
+}
+@media only screen and (max-width: 768px) {
+    .descIndex{
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .banner{
+        width: 95%;
+    }
 }

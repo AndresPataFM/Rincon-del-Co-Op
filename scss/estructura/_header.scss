@@ -15,6 +15,8 @@ header{
     align-content: center;
     min-height: 15vh;
     margin-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
     div{
         form{
             margin: 0.8rem;
@@ -29,13 +31,13 @@ header{
     padding: 5px;
 }
 /* Buscador */
-.buscaNav:focus-within .barraBuscador{
-    display: block;
-}
 .buscador{
     display:flex;
     flex-direction: row-reverse;
     justify-content: center;
+}
+.buscador:focus-within .barraBuscador{
+    display: block;
 }
 .barraBuscador{
     display: none;
@@ -70,7 +72,12 @@ nav{
     font-size: 1.2rem;
     display: none;
 }
+
 @media only screen and (max-width: $phone){
+    header{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
     .menuTabletPc{
         display: none;
     }

@@ -87,7 +87,9 @@ header {
   justify-content: space-between;
   align-content: center;
   min-height: 15vh;
-  margin-bottom: 3%; }
+  margin-bottom: 3%;
+  padding-left: 10%;
+  padding-right: 10%; }
   header div form {
     margin: 0.8rem; }
 
@@ -99,13 +101,13 @@ header {
   padding: 5px; }
 
 /* Buscador */
-.buscaNav:focus-within .barraBuscador {
-  display: block; }
-
 .buscador {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center; }
+
+.buscador:focus-within .barraBuscador {
+  display: block; }
 
 .barraBuscador {
   display: none; }
@@ -136,6 +138,9 @@ nav {
   display: none; }
 
 @media only screen and (max-width: 764px) {
+  header {
+    padding-left: 0%;
+    padding-right: 0%; }
   .menuTabletPc {
     display: none; }
   .hamburger {
@@ -250,8 +255,6 @@ footer {
 .descIndex {
   font-size: 0.9rem;
   text-align: center;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
   border-style: solid;
   border-color: #fe5018;
   border-radius: 10px;
@@ -264,10 +267,17 @@ footer {
   flex-direction: column; }
 
 .banner {
-  width: 95%;
+  width: 100%;
   display: flex;
   align-self: center;
   pointer-events: none; }
+
+@media only screen and (max-width: 768px) {
+  .descIndex {
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+  .banner {
+    width: 95%; } }
 
 .mGameBorder {
   border-style: inset;
