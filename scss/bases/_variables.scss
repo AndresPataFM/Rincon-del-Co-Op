@@ -32,6 +32,10 @@ $medium: $size-standard*4;
 $large: $size-standard*8;
 $giant: $size-standard*16;
 
+@mixin size($value) {
+    height: $value;
+    width: $value;
+}
 
 //Otros
 $tablet: 1024px;

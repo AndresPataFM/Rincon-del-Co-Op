@@ -22,9 +22,14 @@
                 <img src="./imagenes/rincoop-logo.gif" alt="logo" class="logo">
             </a>
             <h1>Rincón del Co-Op</h1>
-            <div class="buscaNav"> 
+            <div class="buscaNav">
+                <script>
+                    function miAlerta() {
+                        alert("Proximamente funcional");
+                    }
+                </script>
                 <form action=""><!-- Buscador -->
-                    <input type="submit" value="Buscar" class="btn-outline-primary">
+                    <input type="submit" value="Buscar" class="btn-outline-primary" onclick="miAlerta()">
                     <input type="text" placeholder="Juego..." class="form-control">
                 </form>
                 <nav> <!-- barra de navegación -->
@@ -57,11 +62,11 @@
         </section>
         <footer>
             <div class="multimedia"> <!-- Links de contacto -->
-                <div class="steam"><a href="https://steamcommunity.com/groups/rincoop"><img src="./imagenes/multimedia/steamgroup.gif" alt="Steam Group"><p>Steam Group</p></a></div> <!-- se supone que el a tendra display de block y height del 100% asi se puede clickear todo el div-->
-                <div class="insta"><a href="https://www.instagram.com/rincoop/"><img src="./imagenes/multimedia/instagram3.gif" alt="Instagram"><p>Instagram</p></a></div>
-                <div class="mail"><a href="mailto:rinconcoop@gmail.com"><img src="./imagenes/multimedia/mail.gif" alt="Mail"><p>Mail</p></a></div><!-- idealmente que al clickear copie rinconcoop@gmail.com al clipboard, -->
-                <div class="youtube"><a href="https://www.youtube.com/channel/UCC5VU0aKKNNXoIw6PNK2AGw"><img src="./imagenes/multimedia/youtube.gif" alt=""><p>Youtube</p></a></div>
-                <div class="multiContacto"><a href="./paginas/contacto.html"><img src="./imagenes/multimedia/contacto.gif" alt="contacto"><p>Contacto</p></a></div>
+                <div class="steam"><a href="https://steamcommunity.com/groups/rincoop" title="Steam Group" target="_blank"><img src="./imagenes/multimedia/steamgroup.gif" alt="Steam Group"></a></div>
+                <div class="insta"><a href="https://www.instagram.com/rincoop/" target="_blank" title="Instagram"><img src="./imagenes/multimedia/instagram3.gif" alt="Instagram"></a></div>
+                <div class="mail"><a href="mailto:rinconcoop@gmail.com" target="_blank" title="Mail"><img src="./imagenes/multimedia/mail.gif" alt="Mail"></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/channel/UCC5VU0aKKNNXoIw6PNK2AGw" title="Youtube" target="_blank"><img src="./imagenes/multimedia/youtube.gif" alt=""></a></div>
+                <div class="multiContacto"><a href="./paginas/contacto.html" title="Contacto"><img src="./imagenes/multimedia/contacto.gif" alt="contacto"></a></div>
             </div>
         </footer>
     </body>

@@ -135,7 +135,7 @@ footer {
 
 .volverInicio {
   display: block;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   margin-left: 15%;
   font-size: 1.2em; }
 
@@ -276,6 +276,7 @@ footer {
   text-align: center;
   font-size: 1.5rem;
   display: flex;
+  justify-content: center;
   align-items: center; }
   .mGameTitle p {
     height: max-content; }
@@ -506,22 +507,38 @@ footer {
 .jTitle {
   grid-area: jTitle;
   text-decoration: underline;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start; }
+  .jTitle p {
+    text-align: center; }
 
 .jRating {
   grid-area: jRating;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center; }
+  justify-content: center; }
   .jRating img {
     width: 32px; }
 
 .jJugadores {
-  grid-area: jJugadores; }
+  grid-area: jJugadores;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 .jIcons {
-  grid-area: jIcons; }
+  grid-area: jIcons;
+  display: flex;
+  padding: 3px; }
+  .jIcons img {
+    height: 32px;
+    width: 32px;
+    margin-left: 2px;
+    margin-right: 2px; }
 
 .jTec {
   grid-area: jTec; }
@@ -534,7 +551,10 @@ footer {
   grid-area: jDesc; }
   .jDesc details p {
     font-size: 0.9em;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify; }
 
 @media only screen and (max-width: 1024px) {
   .jGrid {
@@ -658,14 +678,17 @@ footer {
   display: flex;
   justify-content: center; }
 
-.tablaGlosario th {
-  border: 1px solid #853728; }
-
-.tablaGlosario td {
-  vertical-align: middle; }
-  .tablaGlosario td div {
-    display: flex;
-    justify-content: center; }
+.tablaGlosario {
+  border-spacing: 10px; }
+  .tablaGlosario th {
+    border: 1px solid #853728;
+    padding: 5px; }
+  .tablaGlosario td {
+    vertical-align: middle;
+    padding: 8px; }
+    .tablaGlosario td div {
+      display: flex;
+      justify-content: center; }
 
 .contacto {
   display: flex;

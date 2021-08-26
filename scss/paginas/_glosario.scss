@@ -6,11 +6,14 @@
     justify-content: center;
 }
 .tablaGlosario{
+    border-spacing: 10px;
     th{
         border: $solid-border;
+        padding: 5px;;
     }
     td{
         vertical-align: middle;
+        padding: 8px;
         div{
             display: flex;
             justify-content: center;
