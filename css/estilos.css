@@ -94,7 +94,21 @@ header {
 .buscaNav {
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 20%;
+  padding: 5px; }
+
+/* Buscador */
+.buscaNav:focus-within .barraBuscador {
+  display: block; }
+
+.buscador {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
+
+.barraBuscador {
+  display: none; }
 
 /* Nav */
 nav {
@@ -201,7 +215,10 @@ footer {
   border-radius: 10%;
   border-color: #fe5018;
   color: #fe5018;
-  background-color: transparent; }
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 5px; }
 
 .btn-outline-primary:hover {
   background-color: #853728;
@@ -494,6 +511,7 @@ footer {
   grid-auto-rows: minmax(50px, auto);
   grid-template-areas: "jRating jTitle jTitle jTitle jJugadores" "jRating jIcons jIcons jIcons jJugadores" "jTec jTec jDesc jDesc jDesc";
   margin-bottom: 30px;
+  width: fit-content;
   border-style: outset;
   border-color: #853728; }
 
@@ -533,10 +551,13 @@ footer {
 .jIcons {
   grid-area: jIcons;
   display: flex;
-  padding: 3px; }
+  justify-content: center;
+  padding: 3px;
+  min-width: fit-content; }
   .jIcons img {
     height: 32px;
     width: 32px;
+    display: inline;
     margin-left: 2px;
     margin-right: 2px; }
 
@@ -560,6 +581,12 @@ footer {
   .jGrid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "jTitle jTitle jTitle" "jRating jIcons jJugadores" "jTec jTec jTec" "jDesc jDesc jDesc"; } }
+
+@media only screen and (max-width: 764px) {
+  .jGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(50px, auto), minmax(50px, auto), 100px, minmax(50px, auto), minmax(50px, auto);
+    grid-template-areas: "jTitle jTitle" "jRating jJugadores" "jIcons jIcons" "jTec jTec" "jDesc jDesc"; } }
 
 .haciaArriba div {
   position: fixed;

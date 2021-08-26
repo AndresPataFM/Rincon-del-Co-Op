@@ -10,6 +10,7 @@
     "jRating jIcons jIcons jIcons jJugadores"
     "jTec jTec jDesc jDesc jDesc";
     margin-bottom: 30px;
+    width: fit-content;
     border-style: outset;
     border-color: $naranja2;
 }
@@ -51,9 +52,12 @@
 .jIcons{
     grid-area: jIcons;
     display: flex;
+    justify-content: center;
     padding: 3px;
+    min-width: fit-content;
     img{
         @include size($icon);
+        display: inline;
         margin-left: 2px;
         margin-right: 2px;
     }
@@ -85,6 +89,18 @@
         "jRating jIcons jJugadores"
         "jTec jTec jTec"
         "jDesc jDesc jDesc";
+    }
+}
+@media only screen and (max-width: $phone){
+    .jGrid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(50px, auto), minmax(50px, auto), 100px, minmax(50px, auto), minmax(50px, auto);
+        grid-template-areas: 
+        "jTitle jTitle"
+        "jRating jJugadores"
+        "jIcons jIcons"
+        "jTec jTec"
+        "jDesc jDesc";
     }
 }
 .haciaArriba{

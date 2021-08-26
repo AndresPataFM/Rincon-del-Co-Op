@@ -25,6 +25,20 @@ header{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 20%;
+    padding: 5px;
+}
+/* Buscador */
+.buscaNav:focus-within .barraBuscador{
+    display: block;
+}
+.buscador{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.barraBuscador{
+    display: none;
 }
 /* Nav */
 nav{
