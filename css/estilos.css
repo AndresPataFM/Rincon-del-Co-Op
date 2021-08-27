@@ -549,13 +549,14 @@ footer {
   grid-area: r8; }
 
 .jIndex {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  max-width: 100%;
   border-bottom: 4px ridge #853728;
   padding-bottom: 5px;
   margin-bottom: 5px; }
   .jIndex a {
-    margin: 2px; }
+    margin: 2px;
+    display: inline-block; }
 
 .tablaJuegos {
   line-height: 1.3; }
