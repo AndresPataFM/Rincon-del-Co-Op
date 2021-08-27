@@ -64,7 +64,7 @@
     display: flex;
     justify-content: center;
     padding: 3px;
-    min-width: fit-content;
+    overflow-x: auto;
     img{
         @include size($icon);
         display: inline;

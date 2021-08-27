@@ -608,7 +608,7 @@ footer {
   display: flex;
   justify-content: center;
   padding: 3px;
-  min-width: fit-content; }
+  overflow-x: auto; }
   .jIcons img {
     height: 32px;
     width: 32px;
