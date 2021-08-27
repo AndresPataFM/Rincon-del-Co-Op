@@ -18,17 +18,20 @@
     <body class="mainBody meCagoEnBootstrap">
         <header id="headerJuegos">
             <a href="./../index.html" class="aLogo">
-                <img src="./../imagenes/rincoop-logo.gif" alt="logo" class="logo">
+                <img src="./../imagenes/rincoop-logo.gif" title="Logo" alt="logo" class="logo">
             </a>
             <h1>Rincón del Co-Op</h1>
             <div class="buscaNav">
                 <form action="" class="buscador"  onsubmit="miAlerta()"><!-- Buscador -->
-                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional">
-                    <input type="text" placeholder="Juego..." class="form-control barraBuscador">
+                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional" onclick="cambiarFocus()">
+                    <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraJuegos">
                 </form>
                 <script>
                     function miAlerta() {
                         alert("Proximamente funcional");
+                    }
+                    function cambiarFocus() {
+                        document.getElementById("barraJuegos").focus();
                     }
                 </script>
                 <nav> <!-- barra de navegación -->
@@ -152,7 +155,7 @@
                     <div class="jRating jContent"><img src="../imagenes/descriptivo/rev2.gif" title="Rating 2" alt="Rating"><p>2.0/5.0</p></div>
                     <div class="jJugadores jContent"><p>1 a 4 Jugadores</p></div>
                     <div class="jIcons jContent">
-                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias Maduras" alt="M">
+                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         <img src="../imagenes/descriptivo/esp.gif" title="En Español" alt="Esp">
                         <img src="../imagenes/descriptivo/port.gif" title="En Portugués" alt="Prt">
                         <img src="../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">
@@ -243,7 +246,7 @@
                     <div class="jRating jContent"><img src="../imagenes/descriptivo/rev4.gif" title="Rating 4" alt="Rating"><p>3.5/5.0</p></div>
                     <div class="jJugadores jContent"><p>1 a 2 Jugadores</p></div>
                     <div class="jIcons jContent">
-                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias Maduras" alt="M">
+                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         <img src="../imagenes/descriptivo/esp.gif" title="En Español" alt="Esp">
                         <img src="../imagenes/descriptivo/port.gif" title="En Portugués" alt="Prt">
                         <img src="../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">
@@ -278,7 +281,7 @@
                     <div class="jJugadores jContent"><p>1 a 4 Jugadores</p></div>
                     <div class="jIcons jContent">
                         <img src="../imagenes/descriptivo/recomendado.gif" title="Recomendado" alt="Rec">
-                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias Maduras" alt="M">
+                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         <img src="../imagenes/descriptivo/esp.gif" title="En Español" alt="Esp">
                         <img src="../imagenes/descriptivo/port.gif" title="En Portugués" alt="Prt">
                         <img src="../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">
@@ -314,7 +317,7 @@
                     <div class="jJugadores jContent"><p>1 a 4 Jugadores</p></div>
                     <div class="jIcons jContent">
                         <img src="../imagenes/descriptivo/recomendado.gif" title="Recomendado" alt="Rec">
-                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias Maduras" alt="M">
+                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         <img src="../imagenes/descriptivo/esp.gif" title="En Español" alt="Esp">
                         <img src="../imagenes/descriptivo/port.gif" title="En Portugués" alt="Prt">
                         <img src="../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">
@@ -398,7 +401,7 @@
                     <div class="jRating jContent"><img src="../imagenes/descriptivo/rev3.gif" title="Rating 3" alt="Rating"><p>3.0/5.0</p></div>
                     <div class="jJugadores jContent"><p>1 a 4 Jugadores</p></div>
                     <div class="jIcons jContent">
-                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias Maduras" alt="M">
+                        <img src="../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         <img src="../imagenes/descriptivo/esp.gif" title="En Español" alt="Esp">
                         <img src="../imagenes/descriptivo/port.gif" title="En Portugués" alt="Prt">
                         <img src="../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">

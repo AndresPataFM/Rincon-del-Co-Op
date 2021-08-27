@@ -1,12 +1,36 @@
 .contacto{
     display: flex;
     justify-content: center;
-    form{
-        font-size: 0.7rem;
-        width: fit-content;
-        border: $solid-border;
-        padding: 2%;
-        border-radius: 5%;
-        line-height: 1.5rem;
+    .formContainer{
+        border: $border-outset;
+        border-radius: 4%;
+        form{
+            font-size: 0.7rem;
+            width: fit-content;
+            border: $border-inset;
+            padding: 2%;
+            border-radius: 3.5%;
+            line-height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
     }
+    }
+#motivo{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.radioHolder{
+    margin-bottom: 10px;
+}
+.boletines{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.contactoFormBot{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }

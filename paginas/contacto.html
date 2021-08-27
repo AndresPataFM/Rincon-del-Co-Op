@@ -18,17 +18,20 @@
     <body class="mainBody  meCagoEnBootstrap">
         <header id="headerContacto">
             <a href="./../index.html" class="aLogo">
-                <img src="./../imagenes/rincoop-logo.gif" alt="logo" class="logo">
+                <img src="./../imagenes/rincoop-logo.gif" title="Logo" alt="logo" class="logo">
             </a>
             <h1>Rincón del Co-Op</h1>
             <div class="buscaNav">
                 <form action="" class="buscador"  onsubmit="miAlerta()"><!-- Buscador -->
-                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional">
-                    <input type="text" placeholder="Juego..." class="form-control barraBuscador">
+                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional" onclick="cambiarFocus()">
+                    <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraContacto">
                 </form>
                 <script>
                     function miAlerta() {
                         alert("Proximamente funcional");
+                    }
+                    function cambiarFocus() {
+                        document.getElementById("barraContacto").focus();
                     }
                 </script>
                 <nav> <!-- barra de navegación -->
@@ -50,44 +53,58 @@
             </div>
         </header>
         <div class="contacto">
-            <form action=""> <!-- Puede hacer que esto mande un mail?
-                br hasta que podamos usar css-->
-                <h2>Contactarse</h2>
-                <input type="text" placeholder="Nombre">
-                <br>
-                <input type="text" placeholder="Apellido">
-                <br>
-                <input type="email" placeholder="Email">
-                <br>
-    
-                <label for="motivo">Motivo:</label>
-                <select name="motivo" id="motivo">
-                    <option value="sugerencias">Sugerencias</option>
-                    <option value="errores">Problemas Técnicos</option>
-                    <option value="ofertas">Ofertas</option>
-                </select>
-                <p>¿Subscripción al boletin informativo?</p>
-                <input type="radio" name="boletin" id="si" checked="true">
-                <label for="si">Si</label>
-                <br>
-                <input type="radio" name="boletin" id="no">
-                <label for="no">No</label>
-                <br>
-                <p>Tipo/s de boletin:</p>
-                <input type="checkbox" name="not1" checked="true">
-                <label for="not1">Novedades del sitio</label>
-                <br>
-                <input type="checkbox" name="not2" checked="true">
-                <label for="not2">Ofertas</label>
-                <br>
-                <input type="checkbox" name="not3" checked="true">
-                <label for="not3">Juego del Mes</label>
-                <br>
-                <textarea name="texto" placeholder="Escriba su mensaje acá..." id="" cols="30" rows="10"></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </form>
+            <div class="formContainer">
+                <form action="">
+                    <h2>Contactarse</h2>
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="email" placeholder="Email">
+                    <div>
+                        <label for="motivo">Motivo:</label>
+                        <select name="motivo" id="motivo">
+                            <option value="sugerencias">Sugerencias</option>
+                            <option value="errores">Problemas Técnicos</option>
+                            <option value="ofertas">Ofertas</option>
+                        </select>
+                    </div>
+                    <p>¿Subscripción al boletin informativo?</p>
+                    <div>
+                        <input type="radio" name="boletin" id="si" checked="true">
+                        <label for="si">Si</label>
+                    </div>
+                    <div class="radioHolder">
+                        <input type="radio" name="boletin" id="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div>
+                        <p>Tipo/s de boletin:</p>
+                        <div class="boletines">
+                            <div>
+                                <input type="checkbox" name="not1" checked="true">
+                                <label for="not1">Novedades del sitio</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="not2" checked="true">
+                                <label for="not2">Ofertas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="not3" checked="true">
+                                <label for="not3">Juego del Mes</label>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="texto" placeholder="Escriba su mensaje acá..." id="" cols="30" rows="10"></textarea>
+                    <div class="contactoFormBot">
+                        <input type="submit" value="Enviar" class="btn-outline-primary" onclick="contancto()">
+                        <input type="reset" value="Borrar" class="btn-outline-primary">
+                    </div>
+                    <script>
+                        function contancto(){
+                            alert("Su mensaje esta siendo procesado, nos contactaremos a la brevedad.");
+                        }
+                    </script>
+                </form>
+            </div>
         </div>
     </body>
     <footer>

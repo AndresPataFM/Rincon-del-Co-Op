@@ -35,16 +35,19 @@ header{
     display:flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
 }
 .barraBuscador{
     display: none;
+    font-size: 0.6rem;
 }
 .buscador:focus-within .barraBuscador{
     display: block;
 }
 /* Nav */
 nav{
+    display: flex;
+    justify-content: flex-end;
     margin: 0.8rem;
     a{
         text-decoration: none;

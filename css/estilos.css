@@ -52,6 +52,9 @@ h2 {
   margin-bottom: 3%;
   text-align: center; }
 
+h3 {
+  text-align: center; }
+
 a {
   color: #fe5018; }
 
@@ -105,16 +108,19 @@ header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  align-items: flex-end; }
+  align-items: center; }
 
 .barraBuscador {
-  display: none; }
+  display: none;
+  font-size: 0.6rem; }
 
 .buscador:focus-within .barraBuscador {
   display: block; }
 
 /* Nav */
 nav {
+  display: flex;
+  justify-content: flex-end;
   margin: 0.8rem; }
   nav a {
     text-decoration: none;
@@ -152,12 +158,14 @@ nav {
 
 footer {
   font-size: 0.5rem;
-  padding-top: 10px; }
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .volverInicio {
   display: block;
   margin-bottom: 2%;
-  margin-left: 15%;
   font-size: 1.2em; }
 
 .multimedia {
@@ -167,6 +175,33 @@ footer {
   grid-template-columns: repeat(5, 85px);
   grid-template-rows: 60px;
   justify-content: center; }
+  .multimedia img {
+    border: 3px double #853728;
+    padding: 2px; }
+
+.multimedia img:hover {
+  border: 3px double #fe5018;
+  animation-name: multIcon;
+  animation-duration: 1s;
+  transform: scale(1.2); }
+
+@keyframes multIcon {
+  0% {
+    border: 3px double #853728; }
+  20% {
+    border: 3px double #853728;
+    border-top: 3px double #fe5018; }
+  40% {
+    border: 3px double #853728;
+    border-right: 3px double #fe5018; }
+  60% {
+    border: 3px double #853728;
+    border-bottom: 3px double #fe5018; }
+  80% {
+    border: 3px double #853728;
+    border-left: 3px double #fe5018; }
+  100% {
+    border: 3px double #fe5018; } }
 
 @media only screen and (max-width: 1024px) {
   .multimedia {
@@ -513,6 +548,15 @@ footer {
 #r8 {
   grid-area: r8; }
 
+.jIndex {
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px ridge #853728;
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
+  .jIndex a {
+    margin: 2px; }
+
 .tablaJuegos {
   line-height: 1.3; }
 
@@ -640,13 +684,18 @@ footer {
   text-justify: inter-word;
   font-size: 0.9rem; }
 
+.sobreNosotrosContainer {
+  width: 80%; }
+
 .personaContainer1 {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  min-width: fit-content; }
 
 .personaContainer2 {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  min-width: fit-content; }
 
 .persona {
   width: 60%;
@@ -668,11 +717,17 @@ footer {
   .persona {
     width: 90%; } }
 
+@media only screen and (max-width: 325px) {
+  .persona {
+    width: 100%;
+    justify-content: center; } }
+
 .persona__nombre {
   font-size: 1.2rem;
   grid-area: persona__nombre;
   border: 3px inset #853728;
-  padding-left: 3%; }
+  padding-left: 3%;
+  min-width: max-content; }
 
 .persona__descripcion {
   grid-area: persona__descripcion;
@@ -697,15 +752,14 @@ footer {
 
 .emprendimiento__titulo {
   font-size: 1.2rem;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center; }
 
 .emprendimiento__descripcion {
   text-align: center;
   font-size: 0.9rem; }
 
 @media only screen and (max-width: 764px) {
-  .emprendimiento__titulo {
-    text-align: center; }
   .emprendimiento__descripcion {
     text-align: justify; } }
 
@@ -731,13 +785,36 @@ footer {
 .contacto {
   display: flex;
   justify-content: center; }
-  .contacto form {
-    font-size: 0.7rem;
-    width: fit-content;
-    border: 1px solid #853728;
-    padding: 2%;
-    border-radius: 5%;
-    line-height: 1.5rem; }
+  .contacto .formContainer {
+    border: 3px outset #853728;
+    border-radius: 4%; }
+    .contacto .formContainer form {
+      font-size: 0.7rem;
+      width: fit-content;
+      border: 3px inset #853728;
+      padding: 2%;
+      border-radius: 3.5%;
+      line-height: 1.5rem;
+      display: flex;
+      flex-direction: column; }
+
+#motivo {
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.radioHolder {
+  margin-bottom: 10px; }
+
+.boletines {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; }
+
+.contactoFormBot {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px; }
 
 #secreto {
   display: flex;

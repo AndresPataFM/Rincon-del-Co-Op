@@ -18,17 +18,20 @@
     <body class="mainBody meCagoEnBootstrap">
         <header id="headerGlosario">
             <a href="./../index.html" class="aLogo">
-                <img src="./../imagenes/rincoop-logo.gif" alt="logo" class="logo">
+                <img src="./../imagenes/rincoop-logo.gif" title="Logo" alt="logo" class="logo">
             </a>
             <h1>Rincón del Co-Op</h1>
             <div class="buscaNav">
                 <form action="" class="buscador"  onsubmit="miAlerta()"><!-- Buscador -->
-                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional">
-                    <input type="text" placeholder="Juego..." class="form-control barraBuscador">
+                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional" onclick="cambiarFocus()">
+                    <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraGlosario">
                 </form>
                 <script>
                     function miAlerta() {
                         alert("Proximamente funcional");
+                    }
+                    function cambiarFocus() {
+                        document.getElementById("barraGlosario").focus();
                     }
                 </script>
                 <nav> <!-- barra de navegación -->
@@ -61,7 +64,7 @@
                     <td>Recomendación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/recomendado.gif" alt="Recomendado">
+                            <img src="./../imagenes/descriptivo/recomendado.gif" title="Recomendado" alt="Recomendado">
                         </div>
                     </td>
                     <td>Este es el sello de recomendados por los miembros de la página, si bien puede que no tenga una calificación perfecta o menor a otros, los juegos con este sello fueron los más disfrutados por los miembros de la página.</td>
@@ -70,7 +73,7 @@
                     <td>Calificación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/rev5.gif" alt="Rev5">
+                            <img src="./../imagenes/descriptivo/rev5.gif" title="Rating 5" alt="Rev5">
                         </div>
                     </td>
                     <td>Indica una calificación cercana al 5.</td>
@@ -79,7 +82,7 @@
                     <td>Calificación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/rev4.gif" alt="Rev4"></td>
+                            <img src="./../imagenes/descriptivo/rev4.gif" title="Rating 4" alt="Rev4"></td>
                         </div>
                     <td>Indica una calificación cercana al 4.</td>
                 </tr>
@@ -87,7 +90,7 @@
                     <td>Calificación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/rev3.gif" alt="Rev3">
+                            <img src="./../imagenes/descriptivo/rev3.gif" title="Rating 3" alt="Rev3">
                         </div>
                     </td>
                     <td>Indica una calificación cercana al 3.</td>
@@ -96,7 +99,7 @@
                     <td>Calificación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/rev2.gif" alt="Rev2">
+                            <img src="./../imagenes/descriptivo/rev2.gif" title="Rating 2" alt="Rev2">
                         </div>
                     </td>
                     <td>Indica una calificación cercana al 2.</td>
@@ -105,7 +108,7 @@
                     <td>Calificación</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/rev1.gif" alt="Rev1">
+                            <img src="./../imagenes/descriptivo/rev1.gif" title="Rating 1" alt="Rev1">
                         </div>
                     </td>
                     <td>Indica una calificación cercana al 1.</td>
@@ -114,7 +117,7 @@
                     <td>Precio</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/descuento.gif" alt="Descuento">
+                            <img src="./../imagenes/descriptivo/descuento.gif" title="Descuento" alt="Descuento">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego se encuentra actualmente con descuento.</td>
@@ -123,7 +126,7 @@
                     <td>Contenido</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/E.gif" alt="E">
+                            <img src="./../imagenes/descriptivo/E.gif" title="Para Todo Público" alt="E">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego es apto para todo público.</td>
@@ -132,7 +135,7 @@
                     <td>Contenido</td>
                     <td>
                         <div>        
-                            <img src="./../imagenes/descriptivo/E10.gif" alt="E+">
+                            <img src="./../imagenes/descriptivo/E10.gif" title="Para Mayores de 10 años" alt="E+">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego es apto para mayores de 10.</td>
@@ -141,7 +144,7 @@
                     <td>Contenido</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/T.gif" alt="T">
+                            <img src="./../imagenes/descriptivo/T.gif" title="Para adolecentes" alt="T">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego es apto para mayores de 13.</td>
@@ -150,7 +153,7 @@
                     <td>Contenido</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/M.gif" alt="M">
+                            <img src="./../imagenes/descriptivo/M.gif" title="Para Audiencias maduras" alt="M">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego es apto para mayores de 17.</td>
@@ -159,7 +162,7 @@
                     <td>Contenido</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/A.gif" alt="A">
+                            <img src="./../imagenes/descriptivo/A.gif" title="Para Audiencias adultos" alt="A">
                         </div>
                     </td>
                     <td>Este ícono indica que el juego es apto para mayores de edad.</td>
@@ -168,7 +171,7 @@
                     <td>Idioma</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/esp.gif" alt="Español">
+                            <img src="./../imagenes/descriptivo/esp.gif" title="En Español" alt="Español">
                         </div>
                     </td>
                     <td>El juego esta en el idioma español.</td>
@@ -177,7 +180,7 @@
                     <td>Idioma</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/port.gif" alt="Portugués">
+                            <img src="./../imagenes/descriptivo/port.gif" title="En Portugués" alt="Portugués">
                         </div>
                     </td>
                     <td>El juego esta en el idioma portugués.</td>
@@ -186,7 +189,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/Steam.gif" alt="Steam">
+                            <img src="./../imagenes/descriptivo/Steam.gif" title="En Steam" alt="Steam">
                         </div>
                     </td>
                     <td>El juego esta disponible en Steam.</td>
@@ -195,7 +198,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/playstation.gif" alt="Playstation">
+                            <img src="./../imagenes/descriptivo/playstation.gif" title="En Playstation Network" alt="Playstation">
                         </div>
                     </td>
                     <td>El juego esta disponible en Playstation Network.</td>
@@ -204,7 +207,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/Microsoft.gif" alt="Microsoft">
+                            <img src="./../imagenes/descriptivo/Microsoft.gif" title="En Microsoft Store" alt="Microsoft">
                         </div>
                     </td>
                     <td>El juego esta disponible en Microsoft Store.</td>
@@ -213,7 +216,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/nintendo.gif" alt="Nintendo">
+                            <img src="./../imagenes/descriptivo/nintendo.gif" title="En Nintendo Store" alt="Nintendo">
                         </div>
                     </td>
                     <td>El juego esta disponible en Nintendo Store.</td>
@@ -222,7 +225,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/videojuego.gif" alt="">
+                            <img src="./../imagenes/descriptivo/videojuego.gif" title="Videojuego" alt="Videojuego">
                         </div>
                     </td>
                     <td>El juego es un videojuego.</td>
@@ -231,7 +234,7 @@
                     <td>Tipo</td>
                     <td>
                         <div>
-                            <img src="./../imagenes/descriptivo/mesa.gif" alt="Mesa">
+                            <img src="./../imagenes/descriptivo/mesa.gif" title="Juego de Mesa" alt="Mesa">
                         </div>
                     </td>
                     <td>El juego es un juego de mesa.</td>

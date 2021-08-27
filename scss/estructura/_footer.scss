@@ -1,11 +1,13 @@
 footer{
     font-size: 0.5rem;
-    padding-top: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .volverInicio{
     display: block;
     margin-bottom: 2%;
-    margin-left: 15%;
     font-size: 1.2em;
 }
 .multimedia{
@@ -15,6 +17,24 @@ footer{
     grid-template-columns: repeat(5, 85px);
     grid-template-rows: 60px;
     justify-content: center;
+    img{
+        border: $border-double;
+        padding: 2px;
+    }
+}
+.multimedia img:hover{
+    border: 3px double $naranja;
+    animation-name: multIcon;
+    animation-duration: 1s;
+    transform: scale(1.2);
+}
+@keyframes multIcon {
+    0% {border: 3px double $naranja2;}
+    20% {border: 3px double $naranja2; border-top: 3px double $naranja;}
+    40% {border: 3px double $naranja2; border-right: 3px double $naranja;}
+    60% {border: 3px double $naranja2; border-bottom: 3px double $naranja;}
+    80% {border: 3px double $naranja2; border-left: 3px double $naranja;}
+    100% {border: 3px double $naranja;}
 }
 @media only screen and (max-width: 1024px) {
     .multimedia{
@@ -47,7 +67,7 @@ footer{
         "mail youtube"
         "multiContacto multiContacto";
         grid-template-columns: repeat(2, 85px);
-        grid-template-rows: repeat(3, 60px)
+        grid-template-rows: repeat(3, 60px);
     }
     .steam{
         grid-area: steam;

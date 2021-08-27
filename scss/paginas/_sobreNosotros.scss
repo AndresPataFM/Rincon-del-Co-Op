@@ -15,10 +15,14 @@
     text-justify: inter-word;
     font-size:0.9rem;
 }
+.sobreNosotrosContainer{
+    width: 80%;
+}
 @for $i from 1 to 3{
     .personaContainer#{$i}{
         display: flex;
         @if ($i % 2 == 1) {justify-content: flex-start;} @else {justify-content: flex-end;}
+        min-width: fit-content;
     }
 }
 .persona{
@@ -45,11 +49,18 @@
         width: 90%;
     }
 }
+@media only screen and (max-width: 325px){
+    .persona{
+        width: 100%;
+        justify-content: center;
+    }
+}
 .persona__nombre{
     font-size: 1.2rem;
     grid-area: persona__nombre;
     border: $border-inset;
     padding-left: 3%;
+    min-width: max-content;
 }
 .persona__descripcion{
     grid-area: persona__descripcion;
@@ -75,15 +86,13 @@
 .emprendimiento__titulo{
     font-size: 1.2rem;
     text-decoration: underline;
+    text-align: center;
 }
 .emprendimiento__descripcion{
     text-align: center;
     font-size: 0.9rem;
 }
 @media only screen and (max-width: $phone){
-    .emprendimiento__titulo{
-        text-align: center;
-    }
     .emprendimiento__descripcion{
         text-align: justify;
     }
