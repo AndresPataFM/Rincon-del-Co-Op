@@ -87,7 +87,7 @@ header {
   justify-content: space-between;
   align-content: center;
   min-height: 15vh;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
   padding-left: 10%;
   padding-right: 10%; }
   header div form {
@@ -104,20 +104,21 @@ header {
 .buscador {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center; }
-
-.buscador:focus-within .barraBuscador {
-  display: block; }
+  justify-content: flex-start; }
 
 .barraBuscador {
   display: none; }
+
+.buscador:focus-within .barraBuscador {
+  display: block; }
 
 /* Nav */
 nav {
   margin: 0.8rem; }
   nav a {
     text-decoration: none;
-    margin: 2px; }
+    margin: 2px;
+    border: none; }
   nav a:hover {
     color: #fe5018; }
   nav ul {
@@ -221,7 +222,6 @@ footer {
   border-color: #fe5018;
   color: #fe5018;
   background-color: transparent;
-  display: inline-block;
   text-align: center;
   padding-bottom: 5px; }
 
@@ -521,7 +521,7 @@ footer {
   grid-auto-rows: minmax(50px, auto);
   grid-template-areas: "jRating jTitle jTitle jTitle jJugadores" "jRating jIcons jIcons jIcons jJugadores" "jTec jTec jDesc jDesc jDesc";
   margin-bottom: 30px;
-  width: fit-content;
+  min-width: fit-content;
   border-style: outset;
   border-color: #853728; }
 

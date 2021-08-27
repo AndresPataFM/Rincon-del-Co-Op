@@ -24,15 +24,15 @@
             <h1>Rincón del Co-Op</h1>
             <div class="buscaNav">
                 <!--Función simple de alerta-->
+                <form action="" class="buscador"  onsubmit="miAlerta()"><!-- Buscador -->
+                    <input type="button" value="🔎︎" class="btn-outline-primary buscaFuncional">
+                    <input type="text" placeholder="Juego..." class="form-control barraBuscador">
+                </form>
                 <script>
                     function miAlerta() {
                         alert("Proximamente funcional");
                     }
                 </script>
-                <form action="" class="buscador" onsubmit="miAlerta()"><!-- Buscador -->
-                    <input type="submit" value="🔎︎" class="btn-outline-primary" >
-                    <input type="text" placeholder="Juego..." class="form-control barraBuscador">
-                </form>
                 <nav> <!-- barra de navegación -->
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
