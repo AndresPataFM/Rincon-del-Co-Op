@@ -397,7 +397,8 @@ footer {
   grid-area: mGameTecInfo;
   display: flex;
   align-content: center;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  hyphens: auto; }
 
 .mTecList {
   list-style-type: square;
@@ -422,6 +423,7 @@ footer {
   min-width: 0;
   text-indent: 25px;
   text-align: justify;
+  hyphens: auto;
   text-justify: inter-word;
   font-size: 0.8rem;
   line-height: 1.5; }
@@ -558,9 +560,6 @@ footer {
     margin: 2px;
     display: inline-block; }
 
-.tablaJuegos {
-  line-height: 1.3; }
-
 .jGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -682,6 +681,7 @@ footer {
 .nosotros__descripción {
   width: 80%;
   text-align: justify;
+  hyphens: auto;
   text-justify: inter-word;
   font-size: 0.9rem; }
 
@@ -762,7 +762,8 @@ footer {
 
 @media only screen and (max-width: 764px) {
   .emprendimiento__descripcion {
-    text-align: justify; } }
+    text-align: justify;
+    hyphens: auto; } }
 
 .tablaGlosario td {
   vertical-align: middle; }

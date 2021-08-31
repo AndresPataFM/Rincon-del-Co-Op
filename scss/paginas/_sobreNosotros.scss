@@ -12,6 +12,7 @@
 .nosotros__descripción{
     width: 80%;
     text-align: justify;
+    hyphens: auto;
     text-justify: inter-word;
     font-size:0.9rem;
 }
@@ -95,5 +96,6 @@
 @media only screen and (max-width: $phone){
     .emprendimiento__descripcion{
         text-align: justify;
+        hyphens: auto;
     }
 }

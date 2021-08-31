@@ -27,9 +27,11 @@
                     <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraContacto">
                 </form>
                 <script>
+                    // Saca una alerta al usar el buscador
                     function miAlerta() {
                         alert("Proximamente funcional");
                     }
+                    // Cuando se clickea la lupa cambia el focus al input bar
                     function cambiarFocus() {
                         document.getElementById("barraContacto").focus();
                     }
@@ -56,9 +58,11 @@
             <div class="formContainer">
                 <form action="">
                     <h2>Contactarse</h2>
+                    <!-- Datos básicos de contacto -->
                     <input type="text" placeholder="Nombre">
                     <input type="text" placeholder="Apellido">
                     <input type="email" placeholder="Email">
+                    <!-- Dropdown menu -->
                     <div>
                         <label for="motivo">Motivo:</label>
                         <select name="motivo" id="motivo">
@@ -68,6 +72,7 @@
                         </select>
                     </div>
                     <p>¿Subscripción al boletin informativo?</p>
+                    <!-- Botones radio -->
                     <div>
                         <input type="radio" name="boletin" id="si" checked="true">
                         <label for="si">Si</label>
@@ -76,6 +81,7 @@
                         <input type="radio" name="boletin" id="no">
                         <label for="no">No</label>
                     </div>
+                    <!-- Checkbox -->
                     <div>
                         <p>Tipo/s de boletin:</p>
                         <div class="boletines">
@@ -93,13 +99,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Texto del mensaje -->
                     <textarea name="texto" placeholder="Escriba su mensaje acá..." id="" cols="30" rows="10"></textarea>
+                    <!-- Botones -->
                     <div class="contactoFormBot">
-                        <input type="submit" value="Enviar" class="btn-outline-primary" onclick="contancto()">
+                        <input type="submit" value="Enviar" class="btn-outline-primary" onclick="contacto()">
                         <input type="reset" value="Borrar" class="btn-outline-primary">
                     </div>
                     <script>
-                        function contancto(){
+                        // Mensaje de alerta al submit
+                        function contacto(){
                             alert("Su mensaje esta siendo procesado, nos contactaremos a la brevedad.");
                         }
                     </script>

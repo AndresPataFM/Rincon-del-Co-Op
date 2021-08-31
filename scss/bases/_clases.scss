@@ -1,3 +1,4 @@
+// estructura
 body{
     font-family: 'Press Start 2P', cursive !important;
     color: $naranja;
@@ -28,6 +29,7 @@ section{
         padding-right: 0;
     }
 }
+//  h
 h1{
     text-align: center;
     align-self: center;
@@ -46,6 +48,7 @@ h2{
 h3{
     text-align: center;
 }
+//  a
 a{
     color: $naranja;
 }
@@ -56,6 +59,7 @@ a:visited {
     display: flex;
     justify-content: center;
 }
+// Tablas
 table{
     border: $solid-border;
     th{

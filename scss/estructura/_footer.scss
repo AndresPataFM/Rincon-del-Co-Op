@@ -5,11 +5,13 @@ footer{
     flex-direction: column;
     align-items: center;
 }
+// Volver al Inicio
 .volverInicio{
     display: block;
     margin-bottom: 2%;
     font-size: 1.2em;
 }
+// Multimedia
 .multimedia{
     font-size: 0.6rem;
     text-align: center;
@@ -28,6 +30,7 @@ footer{
     animation-duration: 1s;
     transform: scale(1.2);
 }
+// Animación
 @keyframes multIcon {
     0% {border: 3px double $naranja2;}
     20% {border: 3px double $naranja2; border-top: 3px double $naranja;}
@@ -36,6 +39,7 @@ footer{
     80% {border: 3px double $naranja2; border-left: 3px double $naranja;}
     100% {border: 3px double $naranja;}
 }
+// Responsive
 @media only screen and (max-width: 1024px) {
     .multimedia{
         grid-template-areas: 

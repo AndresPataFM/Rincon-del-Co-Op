@@ -29,9 +29,11 @@
                     <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraRecomendados">
                 </form>
                 <script>
+                    // Saca una alerta al usar el buscador
                     function miAlerta() {
                         alert("Proximamente funcional");
                     }
+                    // Cuando se clickea la lupa cambia el focus al input bar
                     function cambiarFocus() {
                         document.getElementById("barraRecomendados").focus();
                     }
@@ -56,6 +58,7 @@
         </header>
         <section>
             <h2>Recomendados</h2>
+            <!-- Es un grid al que se le van agregando toddos los íconos de los juegos recomendados, linkeandolos -->
             <div class="recomendadosGrid">
                 <div class="recomendadoMes" id="rMes">
                     <a href="./juegoDelMes.html">

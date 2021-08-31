@@ -29,9 +29,11 @@
                     <input type="text" placeholder="Juego..." class="form-control barraBuscador" id="barraJMes">
                 </form>
                 <script>
+                    // Saca una alerta al usar el buscador
                     function miAlerta() {
                         alert("Proximamente funcional");
                     }
+                    // Cuando se clickea la lupa cambia el focus al input bar
                     function cambiarFocus() {
                         document.getElementById("barraJMes").focus();
                     }
@@ -56,18 +58,24 @@
         <section>
             <h2>Juego del Mes</h2>
             <div class="mGame">
-                <div class="mGameIcon mGameBorder"><img src="../imagenes/iconosJuegos/dungeons-and-dragons.png" alt="MonthlyGameIcon"></div>
+                <!-- Icono -->
+                <div class="mGameIcon mGameBorder"><img src="../imagenes/iconosJuegos/dungeons-and-dragons.png" alt="MonthlyGameIcon"></div> 
+                <!-- Nombre -->
                 <div class="mGameTitle mGameBorder"><p>Dungeons and Dragons 5th Edition</p></div>
                 <div class="mGameRating mGameBorder">
+                    <!-- Rating con imagen -->
                     <img src="../imagenes/descriptivo/rev5.gif" alt="ratingIcon">
                     <p>5.0/5.0</p>
                 </div>
+                <!-- Categorias -->
                 <div class="mGameCategories mGameBorder">
                     <p class="mCat">
                         Rol, Aventura y Estrategia.
                     </p>
                 </div>
+                <!-- Jugadores -->
                 <div class="mGamePlayerNumber mGameBorder"><p>2 a 8 o más jugadores</p></div>
+                <!-- Iconos Descriptivos -->
                 <div class="mGameIconInfo mGameBorder">
                     <div class="mGIcon">
                         <img src="../imagenes/descriptivo/recomendado.gif" title="Recomendado" alt="Rec">
@@ -78,6 +86,7 @@
                         <img src="../imagenes/descriptivo/mesa.gif" title="Juego de Mesa" alt="Mesa">
                     </div>
                 </div>
+                <!-- Info técnica -->
                 <div class="mGameTecInfo mGameBorder">
                     <ul class="mTecList">
                         <li>Requiere un mínimo de 2 jugadores.</li>
@@ -88,6 +97,7 @@
                         <li>Campañas de 1 sesion a años.</li>
                     </ul>
                 </div>
+                <!-- Reseña -->
                 <div class="mGameDesc mGameBorder">
                     <p class="mDesc">
                         D&D es un juego de mesa basado en roles, en el que se espera que el Maestro de los calabozos (llamado DM de aquí en adelante), diseña aventuras o corre campañas prearmadas para un grupo de aventureros (llamado PJ de aquí en adelante). En este juego influye en gran parte el azar, ya que para la mayoría de los resultados son determinados por los dados, pero este a su vez es influenciado por los atributos y las proficiencias de los distintos personajes, permitiendo manipular el resultado.  El juego se podría describir como un grupo de amigos contando una historia entre ellos. 
